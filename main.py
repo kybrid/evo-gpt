@@ -6,6 +6,7 @@ from gpt_index import ServiceContext, SimpleDirectoryReader, GPTSimpleVectorInde
 from langchain import OpenAI
 from datetime import datetime
 from dotenv import load_dotenv
+from starlette.responses import RedirectResponse
 from classes.responseBodies import ResponseBody
 from classes.requestBodies import RequestBody, ChatRequest
 
@@ -14,6 +15,11 @@ app = FastAPI()
 
 dir = os.path.dirname(__file__)
 indexLocation = os.path.join(dir, "index.json")
+
+
+@app.get("/")
+def homepage():
+    return RedirectResponse(url='/docs')
 
 
 @app.post("/chat", tags=["Chat"])
