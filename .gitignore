@@ -1,5 +1,4 @@
 .env
 index.json
 /archive/*
-/docs/*
 *.pyc

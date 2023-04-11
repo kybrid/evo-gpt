@@ -6,42 +6,59 @@ from gpt_index import ServiceContext, SimpleDirectoryReader, GPTSimpleVectorInde
 from langchain import OpenAI
 from datetime import datetime
 from dotenv import load_dotenv
-from classes.responseBody import responseBody
+from classes.responseBodies import ResponseBody
+from classes.requestBodies import RequestBody, ChatRequest
 
 load_dotenv()
 app = FastAPI()
 
+dir = os.path.dirname(__file__)
+indexLocation = os.path.join(dir, "index.json")
+
+
 @app.post("/chat")
-async def chatbot(input_text):
+async def chatbot(request: ChatRequest):
+    if request.key != os.getenv("KEY"):
+        return ResponseBody(message="Invalid  Access", success=False)
+    if not os.path.exists(indexLocation):
+        return ResponseBody(message="No data model found, you must use /retrain", success=False)
+
     try:
         index = GPTSimpleVectorIndex.load_from_disk('index.json')
-        response = index.query(input_text, response_mode="compact")
-        return responseBody(message=response.response, success=True)
+        response = index.query(request.chatInput, response_mode="compact")
+        return ResponseBody(message=response.response, success=True)
     except Exception as err:
-        return responseBody(message=err.strerror, success=False)
-    
-@app.get("/resetIndex")
-async def construct_index():
+        return ResponseBody(message=str(err), success=False)
+
+
+@app.post("/retrain")
+async def retrain(request: RequestBody):
+    if request.key != os.getenv("KEY"):
+        return ResponseBody(message="Invalid  Access", success=False)
     try:
         dateStamp = datetime.now().strftime("%d-%m-%y_%H%M%S")
-        dir = os.path.dirname(__file__)
-        currentIndex = os.path.join(dir, "index.json")
-        archivedIndex = os.path.join(dir, "archive", f"index_{dateStamp}.json")
-        shutil.move(currentIndex, archivedIndex)
-        
+        if os.path.exists(indexLocation):
+            archivedIndex = os.path.join(
+                dir, "archive", f"index_{dateStamp}.json")
+            shutil.move(indexLocation, archivedIndex)
+
         max_input_size = os.getenv("max_input_size")
         num_outputs = os.getenv("num_outputs")
         max_chunk_overlap = os.getenv("max_chunk_overlap")
         chunk_size_limit = os.getenv("chunk_size_limit")
 
-        prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
-        llm_predictor = LLMPredictor(llm=OpenAI(temperature=0.5, model_name="text-davinci-003", max_tokens=num_outputs))
+        prompt_helper = PromptHelper(
+            max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
+        llm_predictor = LLMPredictor(llm=OpenAI(
+            temperature=0.5, model_name="text-davinci-003", max_tokens=num_outputs))
         documents = SimpleDirectoryReader(os.getenv("docDir")).load_data()
-        
-        service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor, prompt_helper=prompt_helper)
-        index = GPTSimpleVectorIndex.from_documents(documents, service_context=service_context)
+
+        service_context = ServiceContext.from_defaults(
+            llm_predictor=llm_predictor, prompt_helper=prompt_helper)
+        index = GPTSimpleVectorIndex.from_documents(
+            documents, service_context=service_context)
         index.save_to_disk('index.json')
 
-        return responseBody(message=f"Success. Previous index archived at {archivedIndex}", success=True)
+        return ResponseBody(message=f"Success.", success=True)
     except Exception as err:
-        return responseBody(message=err.strerror, success=False)
+        return ResponseBody(message=str(err), success=False)
