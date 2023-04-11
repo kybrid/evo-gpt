@@ -16,7 +16,7 @@ dir = os.path.dirname(__file__)
 indexLocation = os.path.join(dir, "index.json")
 
 
-@app.post("/chat")
+@app.post("/chat", tags=["Chat"])
 async def chatbot(request: ChatRequest):
     if request.key != os.getenv("KEY"):
         return ResponseBody(message="Invalid  Access", success=False)
@@ -31,7 +31,7 @@ async def chatbot(request: ChatRequest):
         return ResponseBody(message=str(err), success=False)
 
 
-@app.post("/retrain")
+@app.post("/retrain", tags=["AI Admin"])
 async def retrain(request: RequestBody):
     if request.key != os.getenv("KEY"):
         return ResponseBody(message="Invalid  Access", success=False)
