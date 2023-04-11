@@ -17,7 +17,7 @@ indexLocation = os.path.join(dir, "index.json")
 
 
 @app.post("/chat", tags=["Chat"])
-async def chatbot(request: ChatRequest):
+async def chat(request: ChatRequest):
     if request.key != os.getenv("KEY"):
         return ResponseBody(message="Invalid  Access", success=False)
     if not os.path.exists(indexLocation):
@@ -32,7 +32,7 @@ async def chatbot(request: ChatRequest):
 
 
 @app.post("/retrain", tags=["AI Admin"])
-async def retrain(request: RequestBody):
+async def retrainModel(request: RequestBody):
     if request.key != os.getenv("KEY"):
         return ResponseBody(message="Invalid  Access", success=False)
     try:
