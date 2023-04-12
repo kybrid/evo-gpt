@@ -17,7 +17,7 @@ dir = os.path.dirname(__file__)
 indexLocation = os.path.join(dir, "index.json")
 
 
-@app.get("/")
+@app.get("/", include_in_schema=False)
 def homepage():
     return RedirectResponse(url='/docs')
 
