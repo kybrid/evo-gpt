@@ -1,4 +1,3 @@
 .env
-index.json
 /archive/*
 *.pyc
