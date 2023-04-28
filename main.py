@@ -10,7 +10,6 @@ from dotenv import load_dotenv
 from starlette.responses import RedirectResponse
 from classes.responseBodies import ResponseBody
 from classes.requestBodies import RequestBody, ChatRequest
-from bs4 import BeautifulSoup
 
 load_dotenv()
 app = FastAPI()
@@ -41,7 +40,7 @@ async def chat(request: ChatRequest):
 
 @app.post("/retrain", tags=["AI Admin"])
 async def retrainModel(request: RequestBody):
-    if request.key != os.getenv("KEY"):
+    if request.key != os.getenv("RETRAINKEY"):
         return ResponseBody(message="Invalid  Access", success=False)
     try:
         dateStamp = datetime.now().strftime("%d-%m-%y_%H%M%S")
@@ -68,28 +67,5 @@ async def retrainModel(request: RequestBody):
         index.save_to_disk('index.json')
 
         return ResponseBody(message=f"Success.", success=True)
-    except Exception as err:
-        return ResponseBody(message=str(err), success=False)
-
-
-@app.post("/scrapeFandom", tags=["AI Admin"])
-async def scrapeFandom(request: RequestBody):
-    if request.key != os.getenv("KEY"):
-        return ResponseBody(message="Invalid  Access", success=False)
-    try:
-        response = requests.get(
-            "https://projectevo.fandom.com/wiki/Special:AllPages")
-        soup = BeautifulSoup(response.content, 'html.parser')
-        linkList = soup.find(class_="mw-allpages-chunk")
-        count = 0
-        f = open("fandompages.txt", "w")
-        for link in linkList.findChildren():
-            if link.get("href") is not None:
-                f.write("https://projectevo.fandom.com" +
-                        link.get("href") + "\n")
-                count += 1
-        f.close()
-        print(count)
-        return ResponseBody(message="fandompages.txt updated", success=True)
     except Exception as err:
         return ResponseBody(message=str(err), success=False)
