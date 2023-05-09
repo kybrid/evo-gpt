@@ -38,7 +38,9 @@ async def chat(request: ChatRequest):
         The AI should not make up information.\n"""
         prompt += "Human: " + request.chatInput + "\nAI: "
         response = index.query(prompt, response_mode="compact")
+        print("------------------------------------")
         print(f'PROMPT: {prompt}{response.response}')
+        print("------------------------------------")
         return ResponseBody(message=response.response, success=True)
     except Exception as err:
         return ResponseBody(message=str(err), success=False)
