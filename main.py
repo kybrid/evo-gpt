@@ -31,7 +31,10 @@ async def chat(request: ChatRequest):
 
     try:
         index = GPTSimpleVectorIndex.load_from_disk('index.json')
-        response = index.query(request.chatInput, response_mode="compact")
+        prompt = "The following is a conversation between a human and a machine. The human is asking questions about a game called Mission EVO. The AI is to answer in certainty with information about the game. \n"
+        prompt += "Human: " + request.message + "\nAI: "
+        
+        response = index.query(prompt, response_mode="compact")
         return ResponseBody(message=response.response, success=True)
     except Exception as err:
         return ResponseBody(message=str(err), success=False)

@@ -1,3 +1,5 @@
+These are the ONLY weapons in Mission EVO:
+
 A Rocket Launcher is a weapon. It's description is: A shoulder-fired missile weapon that launches rockets equipped whith an explosive warhead. Causes explosions and deals massive damge to structures. It's damage is 400. It's mobility is 65  -  -. It's ammo capacity is 1  
 A Flare Gun is a weapon. It's description is: Gun that shoots a bright red flash into the sky , after a while an airdrop falls at the place of the shot. This gun takes flare amoo. It's damage is 400. It's mobility is   -  -. It's ammo capacity is 1  
 A PPSh-41 is a weapon. It's description is: An old model, the SMG takes 9mm ammo. It's damage is 29. It's mobility is 89. It's V. Stab is 45. It's H. Stab is 28. It's ammo capacity is 20. It's range is Mid
