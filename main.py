@@ -1,6 +1,5 @@
 import shutil
 import os
-import requests
 
 from fastapi import FastAPI
 from gpt_index import ServiceContext, SimpleDirectoryReader, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
