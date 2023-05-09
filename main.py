@@ -59,7 +59,7 @@ async def retrainModel(request: RequestBody):
         prompt_helper = PromptHelper(
             max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
         llm_predictor = LLMPredictor(llm=OpenAI(
-            temperature=0.2, model_name="text-davinci-003", max_tokens=num_outputs))
+            temperature=0.1, model_name="text-davinci-003", max_tokens=num_outputs))
         documents = SimpleDirectoryReader(os.getenv("docDir")).load_data()
 
         service_context = ServiceContext.from_defaults(
