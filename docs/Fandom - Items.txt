@@ -1,3 +1,5 @@
+These are the only items in Mission EVO:
+
 Item: Hide Helmet has a description of: This simply made armor provide poor defense for head .
 Item: Iron Helmet has a description of: This is one effective source of protection , although it provides only mediocre head protection .
 Item: Steel Helmet has a description of: This is a very effective armor that provides the wearer with great protection of the head
