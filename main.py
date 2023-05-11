@@ -34,7 +34,7 @@ async def chat(request: ChatRequest):
         prompt = """The following is a conversation between a human and an AI assistant. 
         The human is playing the role of the player.
         The AI is playing the role of a Mission EVO expert.
-        The AI should pull information from the Mission EVO documents.
+        The AI should rely on information from the EVO documents.
         The AI should not make up information.\n"""
         prompt += "Human: " + request.chatInput + "\nAI: "
         response = index.query(prompt, response_mode="compact")
