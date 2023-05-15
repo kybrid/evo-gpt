@@ -1,63 +1,123 @@
-These are the ONLY weapons in Mission EVO:
+This file contains all the Weapons in Emberland.
 
 A Rocket Launcher is a weapon. It's description is: A shoulder-fired missile weapon that launches rockets equipped whith an explosive warhead. Causes explosions and deals massive damge to structures. It's damage is 400. It's mobility is 65  -  -. It's ammo capacity is 1  
+
 A Flare Gun is a weapon. It's description is: Gun that shoots a bright red flash into the sky , after a while an airdrop falls at the place of the shot. This gun takes flare amoo. It's damage is 400. It's mobility is   -  -. It's ammo capacity is 1  
+
 A PPSh-41 is a weapon. It's description is: An old model, the SMG takes 9mm ammo. It's damage is 29. It's mobility is 89. It's V. Stab is 45. It's H. Stab is 28. It's ammo capacity is 20. It's range is Mid
+
 A MPX is a weapon. It's description is: Crafted using modern engineering technologies, this SMG takes 9mm It's damage is 31. It's mobility is 91. It's V. Stab is 56. It's H. Stab is 53. It's ammo capacity is 30. It's range is Mid
+
 A Vector is a weapon. It's description is: The best of its category, this SMG takes 9mm ammo. It's damage is 32. It's mobility is 93. It's V. Stab is 71. It's H. Stab is 42. It's ammo capacity is 21. It's range is Mid
+
 A M1897 is a weapon. It's description is: This pump-action shotgun takes 12-gauge shells. It's damage is 75. It's mobility is 85. It's V. Stab is 25. It's H. Stab is 14. It's ammo capacity is 5. It's range is Close
+
 A Browning 27 is a weapon. It's description is: This double-barrel shotgun takes 12-gauge shells It's damage is 85. It's mobility is 86. It's V. Stab is 42. It's H. Stab is 22. It's ammo capacity is 2. It's range is Close
+
 A Saiga-12 is a weapon. It's description is: Capable  of semi-automatic. This combat shotgun takes 12-gauge shells. It's damage is 70. It's mobility is 80. It's V. Stab is 23. It's H. Stab is 14. It's ammo capacity is 8. It's range is Close
+
 A AKM is a weapon. It's description is: The classic rifle takes 7.62 ammo. It's damage is 45. It's mobility is 81. It's V. Stab is 45. It's H. Stab is 18. It's ammo capacity is 30. It's range is Mid
+
 A M4A1 is a weapon. It's description is: Having greater capabilities, this rife takes 5.56mm ammo It's damage is 41. It's mobility is 85. It's V. Stab is 63. It's H. Stab is 24. It's ammo capacity is 30. It's range is Mid
+
 A AUG is a weapon. It's description is: A very powerful weapon, this bullpup rifle takes 5.56mm ammo. It's damage is 41. It's mobility is 86. It's V. Stab is 71. It's H. Stab is 23. It's ammo capacity is 30. It's range is Mid
+
 A Kar98k is a weapon. It's description is: The classic bolt-action sniper takes 7.62mm ammo. It's damage is 74. It's mobility is 75. It's V. Stab is 33. It's H. Stab is 14. It's ammo capacity is 5. It's range is Long
+
 A M700 is a weapon. It's description is: Having greater capabilities, this sniper takes 7.62mm ammo. It's damage is 82. It's mobility is 78. It's V. Stab is 28. It's H. Stab is 12. It's ammo capacity is 5. It's range is Long
+
 A Barrett is a weapon. It's description is: The best of its category, this sniper takes 7.62mm ammo. It's damage is 105. It's mobility is 64. It's V. Stab is 19. It's H. Stab is 11. It's ammo capacity is 5. It's range is Long
+
 A Ameli is a weapon. It's description is: Capable of fully automatic fire. This weapon takes 5.56mm ammo. It's damage is 41. It's mobility is 75. It's V. Stab is 45. It's H. Stab is 20. It's ammo capacity is 70. It's range is Mid
+
 A MK46 is a weapon. It's description is: Capable of intense sustanied fire, this weapon takes 5.56mm ammo. It's damage is 40. It's mobility is 71. It's V. Stab is 32. It's H. Stab is 37. It's ammo capacity is 100. It's range is Mid
+
 A ARX is a weapon. It's description is: A very powerful weapon, this assault  rifle takes 7.62mm ammo. It's damage is 44. It's mobility is 83. It's V. Stab is 56. It's H. Stab is 21. It's ammo capacity is 30. It's range is Mid
+
 A Stone Axe is a weapon and tool. It's description is: A simple tool used to chop down trees. It's damage is 25          
+
 A Iron Axe is a weapon and tool. It's description is: An advenced tool used to chope down trees whith more effciency than a stone axe. It's damage is 30          
+
 A Steel Axe is a weapon and tool. It's description is: The most advanced tool for chope down trees at the highest efficiency. It's damage is 35          
+
 A Stone Pickaxe is a weapon and tool. It's description is: A simple tool used to minw ore. It's damage is 20          
+
 A Iron Pickaxe is a weapon and tool. It's description is: An advenced tool used to mine ore whith more effciency than a stone pickaxe. It's damage is 25          
+
 A Steel Pickaxe is a weapon and tool. It's description is: The most advanced tool for mining at the highest efficiency. It's damage is 35          
+
 A Wooden Club is a weapon. It's description is: A simple melee weapon that deals lower damage. It's damage is 40          
+
 A Iron Machete is a weapon. It's description is: An advanced melee weapon that deals solid damage. It's damage is 60          
+
 A Steel Machete is a weapon. It's description is: This melee weapon deals the higest damage. It's damage is 85          
+
 A Frag Grenade is a weapon. It's description is: Will deal to anyone standing within a close proximity when it explodes.  It's damage is 150          
+
 A Smoke Grenade is a weapon. It's description is: Can create a smoke screen that blocks vision fot a while. It's damage is 1          
+
 A Flashbang is a weapon. It's description is: Explodes with a blinding flash and a deafending bang, temporarily disoreintating anyone affected. It's damage is 1          
+
 A Dynamite Bundle is a weapon. It's description is: Can stick to structures and deals damage to structure components. It's damage is 150          
+
 A C4 is a weapon. It's description is: Can stick to structures and deals massive damage to structure components. It's damage is 400          
+
 A 9mm Ammo is ammunition. It's description is: SMG Ammo            
+
 A HE 9mm Ammo- is a ammunition.            
+
 A 5.56mm Ammo is a ammunition. It's description is: MG and rifle ammo            
+
 A HE 5.56mm Ammo- is a ammunition.           
+
 A 7.62mm Ammo is a ammunition. It's description is: Sniper and rifle ammo            
+
 A HE 7.62mm Ammo- is a ammunition.          
+
 A 12-Gauge Shell is a ammunition. It's description is: Shotgun Ammo                  
+
 A Rocket is a ammunition. It's description is: Rocket Launcer Ammo            
+
 A Flare is a ammunition. It's description is: Flare gun ammo            
+
 A Red Dot Sight is a weapon attachment. It's description is: A non-magnifying sight, provide a point of aim in the form of an illuminated red dot.            
+
 A 4x Scope is a weapon attachment. It's description is: This sight provides 4x magnification allows for greater precision over long ranges.            
+
 A 8x Scope is a weapon attachment. It's description is: This telescopic sight provides 8x magnification. Its magnification allows for greater precision over long ranges.            
+
 A SMG Suppressor is a weapon attachment. It's description is: This muzzle flame when firing an SMG and slightly decrease recoil.            
+
 A SMG Silencer is a weapon attachment. It's description is: This muzzle device can significantly reduce the noise made when firing an SMG.            
+
 A SMG Compensator is a weapon attachment. It's description is: This muzzle device can significantly reduce the recoil generated when firing an SMG.            
+
 A Shotgun Choke is a weapon attachment. It's description is: This muzzle device can reduce a shotgun`s spread.            
+
 A SMG Extended Mag is a weapon attachment. It's description is: This magazine can increase an SMG`s magazine capacity.            
+
 A Rifle Extended Mag is a weapon attachment. It's description is: This magazine can increase a rifle`s magazine capacity.            
+
 A Sniper Extended Mag is a weapon attachment. It's description is: This magazine can increase a sniper`s magazine capacity.            
+
 A Shotgun Ammo Pouch is a weapon attachment. It's description is: This magazine can increase a shotgun`s magazine capacity.            
+
 A Metal Stock is a weapon attachment. It's description is: This stock can increase a gun`s handling and reduce its ammo spread.            
+
 A Vertical Grip is a weapon attachment. It's description is: This grip can reduce vertical recoil and increse stability when using the single-fire mode.            
+
 A Tripod is a weapon attachment. It's description is: This grip can reduce horizontal recoil and increse ADS speed when using a scope.            
+
 A Sniper Suppressor is a weapon attachment. It's description is: This muzzle device can neutralize the muzzle flame when firing a sniper and slightly decrease recoil.            
+
 A Sniper Silencer is a weapon attachment. It's description is: This muzzle device can significantly reduce the noise made when firing an sniper.            
+
 A Sniper Brake is a weapon attachment. It's description is: This muzzle device can significantly reduce the recoil generated when firing an sniper.            
+
 A Rifle Suppressor is a weapon attachment. It's description is: This muzzle device can neutralize the muzzle flame when firing a rifle and slightly decrease recoil.            
+
 A Rifle Silencer is a weapon attachment. It's description is: This muzzle device can significantly reduce the noise made when firing an rifle.            
+
 A Rifle Compensator is a weapon attachment. It's description is: This muzzle device can significantly reduce the recoil generated when firing an rifle.            
+
 A Kar98k Ammo Pouch is a weapon attachment. It's description is: This magazine can increase a sniper`s reload speed.            
