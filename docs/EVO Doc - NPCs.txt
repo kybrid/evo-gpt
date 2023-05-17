@@ -1,12 +1,16 @@
 Emberland is full of many different types of NPCs. They can be found all over the place.
 
+There are passive NPC animals. They are: Bears, Foxs, Stags, Deer, Horse, Rabbit, Chicken, Boar, Elephant, Lion, Lioness, Cow, Pig. All of these animals drop Meat, Bone, and Hide when killed.
+The chicken, additionally drops an egg.
+And the horse, is tameable and can be riden with a saddle. The horse allows the player to get around the map efficiently.
+
+
 The first group of NPCs are classified as Tier 3 NPCs. There are 5 Tier 3 npcs: Red Belly, Puker, Trooper, Nurser, and Normie.
 Red Belly is a special Zombified humanoid found in all types of ruins except Port Tackson. They will explode and deal massive damage when someone gets near. Try to steer clear of them. Highly dangerous even for veterans, be advised to kill them first when you see them (Shoot at Sight).
 The next, Puker is a special Zombified humanoid found in all types of ruin except Port Tackson. They deal damage to players by spewing acid from a distance. Keep an eye out for their sneak attacks. Highly irritating, be advised to kill them first when you see them (Shoot at Sight).
 Trooper is a slightly high level Zombified humanoids found in all types of ruins except Port Tackson. They have high defensive capacities. They are slow due to their heavy armor but one stroke deals a great damage so be careful.
 The Nurser is a slightly high level Zombified humanoids found in all types of ruins except Port Tackson. They boast great speed, so make sure to defeat them quickly.
 And finally, the Normie, a low level Zombified humanoids found in all types of ruins except Port Tackson. They can be easily defeated, but in a group they can even kill you. Making good use of triggers and traps can make exploration and combat easier. For example, destroying a propane tank will set off a large explosion, dealing damage to nearby zombies.
-
 
 The second group of NPCs are classified as Tier 2 NPCs. They are Scoper, Dozer, Mob Captain, and Mobber.
 Scoper is a Long-range attacking armed villian with snipers to defend yellow vaults. Don't approach them without any armor since they can one-shot you. You should take cover and use long-range weapons (Bows and Arrows, Snippers, etc) to defeat them. Veteran players leave them be since they can warn them from potential competitors while accessing yellow vault.
