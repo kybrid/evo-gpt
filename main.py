@@ -36,9 +36,9 @@ async def chat(request: ChatRequest):
         The AI is playing the role of an EVO expert.
         The AI should solely rely on information from the EVO documents.\n"""
         prompt += "Human: " + request.chatInput + "\nAI: "
-        response = index.query(prompt, response_mode="compact")
+        response = index.query(request.chatInput, response_mode="compact")
         print("------------------------------------")
-        print(f'PROMPT: {prompt}{response.response}')
+        print(f'PROMPT: {request.chatInput}{response.response}')
         print("------------------------------------")
         return ResponseBody(message=response.response, success=True)
     except Exception as err:
@@ -64,7 +64,7 @@ async def retrainModel(request: RequestBody):
         prompt_helper = PromptHelper(
             max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
         llm_predictor = LLMPredictor(llm=OpenAI(
-            temperature=0.1, model_name="text-davinci-003", max_tokens=num_outputs))
+            temperature=0.0, model_name="text-davinci-003", max_tokens=num_outputs))
         documents = SimpleDirectoryReader(os.getenv("docDir")).load_data()
 
         service_context = ServiceContext.from_defaults(
