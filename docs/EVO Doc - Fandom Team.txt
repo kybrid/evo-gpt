@@ -1,16 +1,22 @@
 There are many weapons and tools in Emberland. Here they all are, and a brief description.
 
+The axes in Emberland are: Stone Axe, Iron Axe, Steel Axe.
+
 Stone Axe is a simple tool used to chop down trees. You can directly craft it and will require 50 Wood or it can be found from Basic Misc Box or Misc Box. It can deal damage upto 25 if it is used as a melee weapon.
 
 Iron Axe is an advanced tool used to chop down trees with more efficiency than a stone axe. In order to craft it you will need to research it in Level I Workbench and 45 Scraps to learn its recipe or you can directly get it from Basic Misc Box or Misc Box or Drop Box . After learning the recipe, you will be able to craft it in Workbench and will require 80 Iron Bar and 2 Glue. It can deal damage upto 30 if it is used as a melee weapon.
 
 Steel Axe is the most advanced tool for chop down trees at the highest efficiency. In order to craft it you will need to research it in Level II Workbench and 150 Scraps to learn its recipe or you can directly get it from Elite Misc Box . After learning the recipe, you will be able to craft it in Workbench and will require 10 Steel Bar and 4 glue. It can deal damage upto 35 if it is used as a melee weapon.
 
+The pickaxes in Emberland are: Stone Pickaxe, Iron Pickaxe, Steel Pickaxe.
+
 Stone Pickaxe is a simple tool used to break rocks. You can directly craft it and will require 50 Wood or it can be found from Basic Misc Box or Misc Box. It can deal damage upto 20 if it is used as a melee weapon.
 
 Iron Pickaxe is an advanced tool used to mine ore with more efficiency than a stone pickaxe. In order to craft it you will need to research it in Level I Workbench and 45 Scraps to learn its recipe or you can directly get it from Basic Misc Box or Misc Box or Drop Box . After learning the recipe, you will be able to craft it in Workbench and will require 80 Iron Bar and 2 Glue. It can deal damage upto 25 if it is used as a melee weapon.
 
 Steel Pickaxe is the most advanced tool for mining at the highest efficiency. In order to craft it you will need to research it in Level II Workbench and 150 Scraps to learn its recipe or you can directly get it from Elite Misc Box . After learning the recipe, you will be able to craft it in Workbench and will require 10 Steel Bar and 4 Glue. It can deal damage upto 35 if it is used as a melee weapon.
+
+The melee weapons in Emberland are: Wooden Club, Iron Machete, Steel Machete.
 
 Wooden Club is a simple melee help you to defend yourself. You can directly craft it and will require 50 Wood or it can be found from Basic Misc Box or Misc Box. It is a short range melee type weapon which can deal damage upto 40.
 
@@ -26,7 +32,7 @@ MPX is a SMG which takes 9mm and Crafted using modern engineering technologies. 
 
 Vector is a SMG which takes 9mm ammo and is the best of its category. In order to craft it you will need to research it in Level III Workbench and 1800 Scraps to learn its recipe (3150 Scraps to learn Vector from the tech tree) or you can directly get it from Kane or Day 4 Airdrop or Day 5 Airdrop or Day 6 Airdrop or Day 7 Airdrop. After learning the recipe, you will be able to craft it in Workbench and will require 1 Vector Receiver, 1 SMG Body, 10 Spring, 60 Precision Gun Part and 60 Steel Bar. It is a mid range SMG type weapon which can deal damage upto 32. Its mobility is about 93 and the fire rate is 909.1. The capacity of its 9mm ammo is 21.
 
-M4A1 is a rife which takes 5.56mm ammo and has greater capabilities. In order to craft it you will need to research it in Level II Workbench and 750 Scraps to learn its recipe (4675 Scraps to learn M4A1 from the tech tree) or you can directly get it from Weapon Box or Elite Weapon Box or Code Vault / Trigger Vault or Day 2 Airdrop or Day 3 Airdrop. After learning the recipe, you will be able to craft it in Workbench and will require 1 Rifle Body, 7 Spring, 50 Precision Gun Part and 50 Steel Bar. It is a mid range Assault Rifle type weapon which can deal damage upto 41. Its mobility is about 85 and the fire rate is 652.2. The capacity of its 5.56mm ammo is 30.
+M4A1 is a rifle which takes 5.56mm ammo and has greater capabilities. In order to craft it you will need to research it in Level II Workbench and 750 Scraps to learn its recipe (4675 Scraps to learn M4A1 from the tech tree) or you can directly get it from Weapon Box or Elite Weapon Box or Code Vault / Trigger Vault or Day 2 Airdrop or Day 3 Airdrop. After learning the recipe, you will be able to craft it in Workbench and will require 1 Rifle Body, 7 Spring, 50 Precision Gun Part and 50 Steel Bar. It is a mid range Assault Rifle type weapon which can deal damage upto 41. Its mobility is about 85 and the fire rate is 652.2. The capacity of its 5.56mm ammo is 30.
 
 AKM is a classic rifle which takes 7.62 ammo. In order to craft it you will need to research it in Level II Workbench and 600 Scraps to learn its recipe (4525 Scraps to learn AKM from the tech tree) or you can directly get it from Weapon Box or Elite Weapon Box or Code Vault/Trigger Vault or Day 2-3 Airdrop. After learning the recipe, you will be able to craft it in Workbench and will require 1 Rifle Body, 5 Spring, 40 Precision Gun Part and 40 Steel Bar. It is a mid range Assault Rifle type weapon which can deal damage upto 45. Its mobility is about 81 and the fire rate is 600. The capacity of its 5.56mm ammo is 30.
 
@@ -43,6 +49,8 @@ Barrett is a sniper which is best of its category and takes 7.62mm ammo. In orde
 Ameli is capable of fully automatic fire which takes 5.56mm ammo. In order to craft it you will need to research it in Level II Workbench and 725 Scraps to learn its recipe (2075 Scraps to learn Ameli from the tech tree) or you can directly get it from Weapon Box or Elite Weapon Box or Code Vault/Trigger Vault or Day 2-3 Airdrop. After learning the recipe, you will be able to craft it in Workbench and will require 1 Machine Gun Body, 5 Spring, 40 Precision Gun Part and 40 Steel Bar. It is a mid range MG type weapon which can deal damage upto 41. Its mobility is about 75 and the fire rate is 666.7. The capacity of its 5.56mm ammo is 75.
 
 MK46 is capable of intense sustained fire which takes 5.56mm ammo. In order to craft it you will need to research it in Level III Workbench and 1350 Scraps to learn its recipe (2700 Scraps to learn Ameli from the tech tree) or you can directly get it from Kane or Day 4-7 Airdrop. After learning the recipe, you will be able to craft it in Workbench and will require 1 MK46 Receiver, 1 Machine Gun Body, 10 Spring, 60 Precision Gun Part and 60 Steel Bar. It is a mid range MG type weapon which can deal damage upto 40. Its mobility is about 71 and the fire rate is 750. The capacity of its 5.56mm ammo is 100.
+
+The shotguns in Emberland are: M1897, Browning 27, and Saiga-12.
 
 M1897 is a pump-action shotgun which takes 12-gauge shells. In order to craft it you will need to research it in Level I Workbench and 175 Scraps to learn its recipe (275 Scraps to learn Ameli from the tech tree) or you can directly get it from Basic Weapon Box or Banshee or Day 1 Airdrop. After learning the recipe, you will be able to craft it in Workbench and will require 1 Spring, 20 Gun Part and 400 Iron Bar. It is a close range SG type weapon which can deal damage upto 75. Its mobility is about 85 and the fire rate is 80. The capacity of its 12-Gauge Shell ammo is 5.
 
