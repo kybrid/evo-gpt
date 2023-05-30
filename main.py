@@ -31,11 +31,11 @@ async def chat(request: ChatRequest):
 
     try:
         index = GPTSimpleVectorIndex.load_from_disk('index.json')
-        prompt = """The following is a conversation between a human and an AI assistant. 
-        The human is playing the role of the player.
-        The AI is playing the role of an EVO expert.
-        The AI should solely rely on information from the EVO documents.\n"""
-        prompt += "Human: " + request.chatInput + "\nAI: "
+        # prompt = """The following is a conversation between a human and an AI assistant. 
+        # The human is playing the role of the player.
+        # The AI is playing the role of an EVO expert.
+        # The AI should solely rely on information from the EVO documents.\n"""
+        # prompt += "Human: " + request.chatInput + "\nAI: "
         response = index.query(request.chatInput, response_mode="compact")
         print("------------------------------------")
         print(f'PROMPT: {request.chatInput}{response.response}')
