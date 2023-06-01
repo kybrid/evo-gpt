@@ -40,7 +40,7 @@ async def chat(request: ChatRequest):
         print("------------------------------------")
         print(f'PROMPT: {request.chatInput}{response.response}')
         print("------------------------------------")
-        return ResponseBody(message=response.response, success=True)
+        return ResponseBody(message=filterResult(response.response), success=True)
     except Exception as err:
         return ResponseBody(message=str(err), success=False)
 
@@ -76,3 +76,9 @@ async def retrainModel(request: RequestBody):
         return ResponseBody(message=f"Success.", success=True)
     except Exception as err:
         return ResponseBody(message=str(err), success=False)
+    
+def filterResult(str: str):
+    filterList = ["@"]
+    for word in filterList:
+        str = str.replace(word, "")
+    return str
